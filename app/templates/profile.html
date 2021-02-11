@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="topprof">
+    <img id="profpic" src="{{ url_for('static', filename='selfie.png') }}">
+    <p>Garrik Wong</p>
+    <p>@garwong</p>
+    <p>Kingston, Jamaica</p>
+    <p>Joined {{ date }}</p>
+</div>
+<div id="botprof">
+    <p>I am a human being of unknown origin and age. Filler text is one of the many banes of my existence. I never really know what to put so it usually just results in some random garbage on screen. Red Swan is a bop and AOT is amongst the GOATs.</p>
+    <p class = "follow">7 Posts</p>
+    <p class = "follow">101 Following</p>
+    <p class = "follow">252 Followers</p>
+
+    <button id="followB">Follow</button>
+</div>
+<p>This webpage is about {{ name }}.</p>
+{% endblock %}
